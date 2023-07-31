@@ -2,10 +2,10 @@ import { createContext, useState , useContext} from "react";
 
 const Tema = createContext();
 
-export default function TemaProvider({ children }) {
-  const [tema, setTema] = useState(null);
+export default function PaisProvider({ children }) {
+  const [paisSelecioanaod, setPaisSelecioanado] = useState(null);
   return (
-    <Tema.Provider value={{ tema, setTema }}>{children}</Tema.Provider>
+    <Tema.Provider value={{ paisSelecioanaod, setPaisSelecioanado }}>{children}</Tema.Provider>
   );
 
 

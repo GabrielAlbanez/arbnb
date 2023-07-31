@@ -3,15 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./App.css";
 import App from "./App";
 import ContexProvider from "./context/Contexto";
-import TemaProvider from "./context/Contexto";
+import PaisProvider from "./context/Contexto";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <TemaProvider>
+  <PaisProvider>
   <React.StrictMode>
     <App />
   </React.StrictMode>
-  </TemaProvider>
+  </PaisProvider>
 
 );
 
