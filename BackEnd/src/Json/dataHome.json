@@ -1,0 +1,206 @@
+{
+    "casas": [
+      {
+        "id": 1,
+        "preco": 250000,
+        "local": "Rua das Flores, 123",
+        "imagens": {
+           "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+           "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a9e05f20-a73a-498b-b0b5-ef5109519c7f.jpeg?im_w=720",
+           "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/87de5026-281d-4a84-a428-dac2cd089989.jpeg?im_w=720"
+        }
+
+      },
+      {
+        "id": 2,
+        "preco": 180000,
+        "local": "Avenida Principal, 456",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 3,
+        "preco": 320000,
+        "local": "Praça da Liberdade, 789",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 4,
+        "preco": 150000,
+        "local": "Rua das Palmeiras, 10",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 5,
+        "preco": 280000,
+        "local": "Avenida Central, 987",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 6,
+        "preco": 210000,
+        "local": "Rua dos Coqueiros, 456",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 7,
+        "preco": 300000,
+        "local": "Praça da Esperança, 789",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 8,
+        "preco": 190000,
+        "local": "Rua das Oliveiras, 23",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 9,
+        "preco": 275000,
+        "local": "Avenida dos Sonhos, 987",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 10,
+        "preco": 230000,
+        "local": "Praça das Flores, 65",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 11,
+        "preco": 260000,
+        "local": "Rua das Cerejeiras, 876",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 12,
+        "preco": 195000,
+        "local": "Avenida das Estrelas, 987",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 13,
+        "preco": 290000,
+        "local": "Praça do Sol, 654",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a9e05f20-a73a-498b-b0b5-ef5109519c7f.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/924e4d2a-0404-493d-bf7c-cba3f6a7efe8.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 14,
+        "preco": 240000,
+        "local": "Rua dos Lírios, 456",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 15,
+        "preco": 310000,
+        "local": "Avenida das Águias, 123",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 16,
+        "preco": 175000,
+        "local": "Praça da Vitória, 987",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 17,
+        "preco": 260000,
+        "local": "Rua das Magnólias, 56",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 18,
+        "preco": 215000,
+        "local": "Avenida das Rosas, 987",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 19,
+        "preco": 280000,
+        "local": "Praça das Árvores, 789",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      },
+      {
+        "id": 20,
+        "preco": 220000,
+        "local": "Rua das Violetas, 1",
+        "imagens": {
+            "img1" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img2" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720",
+            "img3" :  "https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720"
+         }
+      }
+    ]
+  }
+  
