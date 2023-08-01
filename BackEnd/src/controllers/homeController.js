@@ -10,6 +10,7 @@ res.status(200).send(Homes)
 
 
 
+
 module.exports = {
     getAllHomes
 }

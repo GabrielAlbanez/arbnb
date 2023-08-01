@@ -30,7 +30,7 @@ export default function CarrouselImg({ img1, img2, img3, id }) {
 
   return (
     <div key={id} style={{ width: `300px`, height: `300px`, backgroundImage: `url(${imagems[contador]})`, backgroundSize: 'cover', backgroundPosition: 'center' }} className="rounded-xl">
-      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems:'center' , padding: '10px' , width : '30vh' , height:'30vh' }}>
         <div onClick={voltar} className="bg-white rounded-full border-[1px]"><GrFormPrevious size={30}/></div>
         <div onClick={avançar} className="bg-white rounded-full border-[1px]"><GrFormNext size={30}/></div>
       </div>

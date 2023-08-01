@@ -13,7 +13,7 @@ export default function Home() {
   const fetchData = () => {
     setTimeout(async () => {
       try {
-        const response = await fetch("http://localhost:3333/home", {
+        const response = await fetch("http://localhost:7903/home", {
           cache: "default",
         });
         if (!response.ok) {
@@ -60,7 +60,7 @@ export default function Home() {
                {data.map((casas) => (
               <div
                 key={casas.id}
-                className="shadow-2xl aspect-square rounded-xl bg-center "
+                className="shadow-2xl aspect-square rounded-xl bg-center  "
               >
                 {/* <div>
                 <img src={casas.imagens.img1} alt="" height={400} width={400} className="rounded-md" />

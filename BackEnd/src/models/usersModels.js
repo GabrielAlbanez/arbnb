@@ -1,4 +1,5 @@
 const conecction = require('./conecction')
+const bcrypt = require('bcrypt');
 //function que vai ter conexao direta com o banco
 const { cpf } = require('cpf-cnpj-validator')
 const getAllUser=async()=>{
@@ -15,8 +16,9 @@ const getByIdUser=async(id)=>{
 
 const createUser =async(user)=>{
  const {name,password,cpf:cepf,email} = user
+ const passwordHash = await bcrypt.hash(password,10);
  const query = 'INSERT INTO users (name,password,cpf,email) VALUES (?,?,?,?)';
- const [result] = await conecction.execute(query,[name,password,cepf,email])
+ const [result] = await conecction.execute(query,[name,passwordHash,cepf,email])
  return {insertId : result.insertId};
 }
 
@@ -28,17 +30,32 @@ const deleteUser =async(id)=>{
 
 const updateUser =async(id,user)=>{
   const {name,password,cpf:cepf,email} = user
+  const passwordHash = await bcrypt.hash(password,10);
   const query = 'UPDATE users SET name =?,password =?,cpf =?,email =? WHERE id =?';
-  const [result] = await conecction.execute(query,[name,password,cepf,email,id])
+  const [result] = await conecction.execute(query,[name,passwordHash,cepf,email,id])
   return result;
 }
 
+const UsurioLogado = async(email,password)=>{
+  const query = 'SELECT * FROM users WHERE email =?';
+    const [result] = await conecction.execute(query,[email])
+    if(result.length > 0){
+      //se tiver dados dentro de resul
+      const user = result[0] // esse user retonarna o email do usuario e a senha
+      const passwordMatch = await bcrypt.compare(password,user.password)
+      if(passwordMatch){
+        return user
+      }
+    }
+    return null
 
+}
 
 module.exports={
 getAllUser,
  getByIdUser,
  createUser,
  deleteUser,
- updateUser
+ updateUser,
+ UsurioLogado
 }
