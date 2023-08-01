@@ -24,14 +24,20 @@ const validateBody = async (req, res, next) => {
   }
 
   // Verificar se o e-mail já está cadastrado no banco de dados
-  const query = "SELECT email FROM users WHERE email = ?";
-  const result = await conecction.execute(query, [email]);
+  const query = 'SELECT email FROM users WHERE email = ?';
+  const [result] = await conecction.execute(query, [email]);
+  console.log(result)
 
   if (result.length > 0) {
     return res.status(400).json({ message: "Email already registered" });
   }
+  else{
+    next()
+  }
 
-  next();
+
+
+ 
 };
 
 
