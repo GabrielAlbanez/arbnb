@@ -29,7 +29,8 @@ const deleteUser = async (req, res) => {
 };
 
 const LoginUser = async(req, res) => {
-   const userLogado = await moviesModels.UsurioLogado(req.body);
+  const {email,password} = req.body
+   const userLogado = await moviesModels.UsurioLogado(email,password);
    return res.status(200).json(userLogado);
 }
 

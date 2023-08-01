@@ -37,7 +37,7 @@ const updateUser =async(id,user)=>{
 }
 
 const UsurioLogado = async(email,password)=>{
-  const query = 'SELECT * FROM users WHERE email =?';
+  const query = 'SELECT * FROM users WHERE email = ?';
     const [result] = await conecction.execute(query,[email])
     if(result.length > 0){
       //se tiver dados dentro de resul
@@ -45,7 +45,11 @@ const UsurioLogado = async(email,password)=>{
       const passwordMatch = await bcrypt.compare(password,user.password)
       if(passwordMatch){
         return user
+      } else{
+        return ("incorrect password")
       }
+    } else{
+      return ("incorrect E-mail")
     }
     return null
 
