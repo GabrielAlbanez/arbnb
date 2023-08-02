@@ -21,9 +21,10 @@ router.post('/login',userController.LoginUser)
 
 
 //rotas para devolver as respostas das casas em json
-router.get('/private', userMiddleware.verfiicarToken,userController.RouterPrivateAcess)
+router.get('/private', userMiddleware.verificarToken,userController.RouterPrivateAcess)
 
 router.get('/home',homeController.getAllHomes);
+router.get('/home/:id', homeController.homeById)
 
 module.exports = router;
 

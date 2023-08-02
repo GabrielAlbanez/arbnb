@@ -1,7 +1,8 @@
 const { cpf } = require("cpf-cnpj-validator");
 const emailValidator = require("email-validator");
 const conecction = require("../models/conecction");
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
+const util = require("util");
 
 const validateBody = async (req, res, next) => {
   const { name, email, password, cpf: cepf } = req.body;
@@ -25,47 +26,39 @@ const validateBody = async (req, res, next) => {
   }
 
   // Verificar se o e-mail já está cadastrado no banco de dados
-  const query = 'SELECT email FROM users WHERE email = ?';
+  const query = "SELECT email FROM users WHERE email = ?";
   const [result] = await conecction.execute(query, [email]);
-  console.log(result)
+  console.log(result);
 
   if (result.length > 0) {
     return res.status(400).json({ message: "Email already registered" });
+  } else {
+    next();
   }
-  else{
-    next()
-  }
-
-
-
- 
 };
 
-
-const verfiicarToken = (req,res,next)=>{
- 
-  const { name, email, password, cpf: cepf } = req.body;
-
-  const token = req.headers['authorization']
-  console.log(token)
-  
-  if(!token){
-    return res.status(401).json({message: 'Token não fornecido'})
+const verificarToken = (req, res, next) => {
+  const token = req.headers.authorization;
+  if (!token) {
+    return res.status(401).json({ error: "Token não fornecido" });
   }
-  jwt.verify(email, "8903" , (err,decode) =>{
-    if(err){
-      return res.status(401).json({message: 'Token inválido'})
-    }
-    req.email = decode.email
-    next()
-  })
 
-}
+  const [, tokenRecebido] = token.split(' ');
 
+  if (!tokenRecebido) {
+    return res.status(401).json({ error: "Token não fornecido" });
+  }
 
-
+  try {
+    const decode = jwt.verify(tokenRecebido, "8903");
+    req.userEmail = decode.email;
+    next();
+  } catch (error) {
+    return res.status(401).json({ error: "Token inválido" });
+  }
+};
 
 module.exports = {
   validateBody,
-  verfiicarToken
+  verificarToken,
 };

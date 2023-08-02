@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { GrFormPrevious,GrFormNext } from "react-icons/gr";
+import { GrFormPrevious, GrFormNext } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 export default function CarrouselImg({ img1, img2, img3, id }) {
   const imagems = [img1, img2, img3];
@@ -27,14 +28,43 @@ export default function CarrouselImg({ img1, img2, img3, id }) {
     );
   };
 
-
   return (
-    <div key={id} style={{ width: `300px`, height: `300px`, backgroundImage: `url(${imagems[contador]})`, backgroundSize: 'cover', backgroundPosition: 'center' }} className="rounded-xl">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems:'center' , padding: '10px' , width : '30vh' , height:'30vh' }}>
-        <div onClick={voltar} className="bg-white rounded-full border-[1px]"><GrFormPrevious size={30}/></div>
-        <div onClick={avançar} className="bg-white rounded-full border-[1px]"><GrFormNext size={30}/></div>
+    <div
+      style={{ width: `20rem`, maxWidth: `30rem`, height: `20rem` }}
+      className="rounded-xl mx-auto relative overflow-hidden"
+    >
+      <Link to={`/casas/${id}`}>
+      <img
+        src={imagems[contador]}
+        alt={`Imagem ${contador}`}
+        className="w-full h-full object-cover"
+      />
+      </Link>
+
+      
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          height: `20rem`,
+          padding: "1rem",
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+        }}
+      >
+        <div onClick={voltar} className="bg-white rounded-full p-2">
+          <GrFormPrevious size={30} />
+        </div>
+        <div onClick={avançar} className="bg-white rounded-full p-2">
+          <GrFormNext size={30} />
+        </div>
+        
       </div>
+
+      
     </div>
   );
 }
-    

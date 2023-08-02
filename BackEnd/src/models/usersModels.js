@@ -46,7 +46,7 @@ const UsurioLogado = async(email,password)=>{
       const passwordMatch = await bcrypt.compare(password,user.password)
       if(passwordMatch){
         const token = jwt.sign({ email }, "8903", { expiresIn: '1h' });
-        return ("Login realizado com sucesso /n" + token)
+        return ("Login realizado com sucesso" + token)
       } else{
         return ("incorrect password")
       }
