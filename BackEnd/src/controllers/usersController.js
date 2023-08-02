@@ -34,6 +34,10 @@ const LoginUser = async(req, res) => {
    return res.status(200).json(userLogado);
 }
 
+const RouterPrivateAcess=async(req,res)=>{
+  res.json({ message: 'Rota privada acessada por ' + req.email });
+}
+
 module.exports = {
   
   getAllUser,
@@ -42,4 +46,5 @@ module.exports = {
   updateUser,
   deleteUser,
   LoginUser,
+  RouterPrivateAcess
 };

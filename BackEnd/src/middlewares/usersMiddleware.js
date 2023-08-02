@@ -1,6 +1,7 @@
 const { cpf } = require("cpf-cnpj-validator");
 const emailValidator = require("email-validator");
 const conecction = require("../models/conecction");
+const jwt = require('jsonwebtoken');
 
 const validateBody = async (req, res, next) => {
   const { name, email, password, cpf: cepf } = req.body;
@@ -41,8 +42,30 @@ const validateBody = async (req, res, next) => {
 };
 
 
+const verfiicarToken = (req,res,next)=>{
+ 
+  const { name, email, password, cpf: cepf } = req.body;
+
+  const token = req.headers['authorization']
+  console.log(token)
+  
+  if(!token){
+    return res.status(401).json({message: 'Token não fornecido'})
+  }
+  jwt.verify(email, "8903" , (err,decode) =>{
+    if(err){
+      return res.status(401).json({message: 'Token inválido'})
+    }
+    req.email = decode.email
+    next()
+  })
+
+}
+
+
 
 
 module.exports = {
   validateBody,
+  verfiicarToken
 };

@@ -1,5 +1,6 @@
 const conecction = require('./conecction')
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 //function que vai ter conexao direta com o banco
 const { cpf } = require('cpf-cnpj-validator')
 const getAllUser=async()=>{
@@ -44,7 +45,8 @@ const UsurioLogado = async(email,password)=>{
       const user = result[0] // esse user retonarna o email do usuario e a senha
       const passwordMatch = await bcrypt.compare(password,user.password)
       if(passwordMatch){
-        return user
+        const token = jwt.sign({ email }, "8903", { expiresIn: '1h' });
+        return ("Login realizado com sucesso /n" + token)
       } else{
         return ("incorrect password")
       }
