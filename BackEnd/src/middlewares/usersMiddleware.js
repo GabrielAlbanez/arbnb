@@ -39,11 +39,12 @@ const validateBody = async (req, res, next) => {
 
 const verificarToken = (req, res, next) => {
   const token = req.headers.authorization;
+  console.log(token)
   if (!token) {
-    return res.status(401).json({ error: "Token não fornecido" });
+    return res.status(401).json({ error: "vc precisa estar logado para acessar essa pagina" });
   }
 
-  const [, tokenRecebido] = token.split(' ');
+  const [tokenRecebido] = token.split(' ');
 
   if (!tokenRecebido) {
     return res.status(401).json({ error: "Token não fornecido" });
