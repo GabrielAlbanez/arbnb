@@ -72,7 +72,7 @@ export default function Nabar() {
       </div>
       {showModalLogin &&(
         <>
-        <ModalLogin handleClose={()=>handleCloseModal("Login")}/>
+        <ModalLogin close={showModalLogin} setClose={setShowModalViewLogin} handleClose={()=>handleCloseModal("Login")}/>
         </>
       )}
 
