@@ -22,12 +22,23 @@ export default function CarrouselImg({ img1, img2, img3, id }) {
         width: `20rem`,
         maxWidth: `30rem`,
         height: `20rem`,
-        background: `url(${imagems[contador]})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        position: "relative",
+        overflow: "hidden", // Adiciona o overflow para evitar que os botões fiquem fora do container
       }}
-      className="rounded-xl mx-auto overflow-hidden"
+      className="rounded-xl mx-auto"
     >
+      <img
+        src={imagems[contador]}
+        alt="Imagem"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          position: "absolute",
+          top: 0,
+          left: 0,
+        }}
+      />
 
       <div
         style={{
@@ -36,6 +47,7 @@ export default function CarrouselImg({ img1, img2, img3, id }) {
           alignItems: "center",
           height: `20rem`,
           padding: "1rem",
+          position: "relative", // Adiciona o posicionamento relativo para manter os botões no fluxo normal
         }}
       >
         <div onClick={voltar} className="bg-white rounded-full p-2">

@@ -12,13 +12,13 @@ export default function ModalLogin({ handleClose }) {
     }
 
     const animationStyle = closeAnimation === false
-        ? { animation: 'slideOutToTop 0.5s ' }
+        ? { animation: 'slideOutToTop 0.2s ' }
         : { animation: 'slideOutBottom 0.5s ' };
 
 
 
     return (
-        <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 ' style={animationStyle}>
+        <div className='absolute z-50 inset-0 flex items-center justify-center bg-black bg-opacity-50  ' style={animationStyle}>
             <div className='bg-white w-[60vh] h-[70vh] rounded-md'>
                 <header className='h-[10%] flex flex-row items-center border-b-[1px] justify-between px-10 '>
                     <div className=' '><img src={logo} alt="" height={100} width={100} /></div>

@@ -9,20 +9,27 @@ import ModalRegister from "./Modal/ModalRegister";
 import ModalLogin from "./Modal/ModalLogin";
 export default function Nabar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [showModalLogin,setShowModalViewLogin] = useState(false)
-  const [showModalRegister,setShowModalViewRegister] = useState(false)
+  const [openBar,setOpenBar] = useState(false);
+  const [showModalLogin, setShowModalViewLogin] = useState(false);
+  const [showModalRegister, setShowModalViewRegister] = useState(false);
+  
   const openMeu = () => {
     setIsOpen((valor) => !valor);
   };
+
   
-  const handleOpenModal = (name)=>{
-    name === "Login" ? setShowModalViewLogin(true) : setShowModalViewRegister(true)
-   }
 
-   const handleCloseModal = (name)=>{
-    name === "Login" ? setShowModalViewLogin(false) : setShowModalViewRegister(false)
-   }
+  const handleOpenModal = (name) => {
+    name === "Login"
+      ? setShowModalViewLogin(true)
+      : setShowModalViewRegister(true);
+  };
 
+  const handleCloseModal = (name) => {
+    name === "Login"
+      ? setShowModalViewLogin(false)
+      : setShowModalViewRegister(false);
+  };
 
   return (
     <div>
@@ -58,10 +65,16 @@ export default function Nabar() {
             {isOpen && (
               <>
                 <div className="bg-white  w-[150px] left-[88%]  absolute top-20 mr-10 flex flex-col items-center gap-3 shadow-lg transition hover:shadow-2xl rounded-md py-3 ">
-                  <div className=" w-[100%] flex items-center justify-center cursor-pointer" onClick={()=>handleOpenModal("Login")}>
+                  <div
+                    className=" w-[100%] flex items-center justify-center cursor-pointer"
+                    onClick={() => handleOpenModal("Login")}
+                  >
                     Login
                   </div>
-                  <div className=" w-[100%] flex items-center justify-center cursor-pointer" onClick={()=>handleOpenModal("Registro")}>
+                  <div
+                    className=" w-[100%] flex items-center justify-center cursor-pointer"
+                    onClick={() => handleOpenModal("Registro")}
+                  >
                     Registro
                   </div>
                 </div>
@@ -70,20 +83,21 @@ export default function Nabar() {
           </div>
         </div>
       </div>
-      {showModalLogin &&(
+      {showModalLogin && (
         <>
-        <ModalLogin close={showModalLogin} setClose={setShowModalViewLogin} handleClose={()=>handleCloseModal("Login")}/>
+          <ModalLogin
+            close={showModalLogin}
+            setClose={setShowModalViewLogin}
+            handleClose={() => handleCloseModal("Login")}
+          />
         </>
       )}
 
-      {
-        showModalRegister && (
-          <>
-          <ModalRegister handleClose={()=>handleCloseModal("Registro")} />
-          </>
-        )
-      }
-
+      {showModalRegister && (
+        <>
+          <ModalRegister handleClose={() => handleCloseModal("Registro")} />
+        </>
+      )}
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function FilterBar({ children }) {
     return (
         <div className="w-screen items-center justify-center">
             <div className="flex flex-row gap-5 items-center justify-center ">
-                <div className="flex flex-row  items-center gap-5 border-[1px] px-12  sm:w-[60vh] xl:w-[100vh] justify-between h-[6vh] rounded-full text-xl shadow-md transition hover:shadow-xl cursor-pointer">
+                <div className="flex flex-row  items-center gap-5 border-[1px] px-12  sm:w-[60vh] xl:w-[100vh] justify-between h-[6vh] rounded-full text-lg shadow-md transition hover:shadow-xl cursor-pointer">
                     <div onClick={()=>handleSetCor("Brazil")} className={`
                     ${paisSelecioanaod === "Brazil" ? 'text-rose-500' : ""}
                     `}>Brasil</div>
